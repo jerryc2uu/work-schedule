@@ -1,197 +1,367 @@
-2025-01-30 12:53:22.225 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
-2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8081/api/hello
-2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 12:53:22.227 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /api/hello] with attributes [authenticated]
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8081/api/hello to session
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4926364a, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@3a2bb026
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8081/login
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 12:53:22.230 DEBUG 51643 --- [http-nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
-2025-01-30 12:53:22.230 DEBUG 51643 --- [http-nio-8081-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
-2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 12:53:22.689 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /favicon.ico] with attributes [authenticated]
-2025-01-30 12:53:22.689 DEBUG 51643 --- [http-nio-8081-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4926364a, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
-2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@3a2bb026
-2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8081/login
-2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
-2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.694 DEBUG 51643 --- [http-nio-8081-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 12:53:22.694 DEBUG 51643 --- [http-nio-8081-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 12:56:06.474  INFO 51643 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-30 12:56:06.476  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-30 12:56:06.480  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-30 15:46:17.222  INFO 24311 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 on MacBook-Pro.local with PID 24311 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
-2025-01-30 15:46:17.223  INFO 24311 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-01-30 15:46:17.396  INFO 24311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-30 15:46:17.401  INFO 24311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2025-01-30 15:46:17.567  INFO 24311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2025-01-30 15:46:17.571  INFO 24311 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-30 15:46:17.571  INFO 24311 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2025-01-30 15:46:17.599  INFO 24311 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-30 15:46:17.599  INFO 24311 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
-2025-01-30 15:46:17.652  INFO 24311 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-30 15:46:17.665  INFO 24311 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2025-01-30 15:46:17.720  INFO 24311 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-01-30 15:46:17.745  INFO 24311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-30 15:46:17.767  INFO 24311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-30 15:46:17.772  INFO 24311 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2025-01-30 15:46:17.849  INFO 24311 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-01-30 15:46:17.852  INFO 24311 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-30 15:46:17.896  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@743bb39a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2de3b052, org.springframework.security.web.context.SecurityContextPersistenceFilter@18907af2, org.springframework.security.web.header.HeaderWriterFilter@60dcf9ec, org.springframework.security.web.csrf.CsrfFilter@36211bbc, org.springframework.security.web.authentication.logout.LogoutFilter@59ec7020, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61a704d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfd5cd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1de7f898, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f3c8b60, org.springframework.security.web.session.SessionManagementFilter@4c063cb9, org.springframework.security.web.access.ExceptionTranslationFilter@26ca12a2, org.springframework.security.web.access.intercept.AuthorizationFilter@3302035b]
-2025-01-30 15:46:17.905  WARN 24311 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-30 15:46:17.987  WARN 24311 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore1']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-30 15:46:17.987  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore1']
-2025-01-30 15:46:17.987  WARN 24311 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-30 15:46:17.987  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore2']
-2025-01-30 15:46:18.001  INFO 24311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2025-01-30 15:46:18.005  INFO 24311 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 0.918 seconds (JVM running for 1.035)
-2025-01-30 15:47:24.554  INFO 24311 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-30 15:47:24.555  INFO 24311 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-30 15:47:24.555  INFO 24311 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-01-30 15:47:24.559 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
-2025-01-30 15:47:24.561 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:47:24.562 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8081/api/hello to session
-2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@49be0ce7
-2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:47:24.576 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:47:24.576 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:28.705  INFO 24311 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-30 15:48:28.708  INFO 24311 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-30 15:48:28.712  INFO 24311 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-01-30 15:48:35.127  INFO 24738 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 on MacBook-Pro.local with PID 24738 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
-2025-01-30 15:48:35.127  INFO 24738 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-01-30 15:48:35.293  INFO 24738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-30 15:48:35.297  INFO 24738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2025-01-30 15:48:35.454  INFO 24738 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
-2025-01-30 15:48:35.459  INFO 24738 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-01-30 15:48:35.459  INFO 24738 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
-2025-01-30 15:48:35.488  INFO 24738 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-01-30 15:48:35.488  INFO 24738 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 347 ms
-2025-01-30 15:48:35.542  INFO 24738 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-30 15:48:35.554  INFO 24738 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2025-01-30 15:48:35.597  INFO 24738 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-01-30 15:48:35.622  INFO 24738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-30 15:48:35.643  INFO 24738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-30 15:48:35.648  INFO 24738 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
-2025-01-30 15:48:35.710  INFO 24738 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-01-30 15:48:35.712  INFO 24738 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-30 15:48:35.751  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@743bb39a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2de3b052, org.springframework.security.web.context.SecurityContextPersistenceFilter@18907af2, org.springframework.security.web.header.HeaderWriterFilter@60dcf9ec, org.springframework.security.web.csrf.CsrfFilter@36211bbc, org.springframework.security.web.authentication.logout.LogoutFilter@59ec7020, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61a704d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfd5cd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1de7f898, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f3c8b60, org.springframework.security.web.session.SessionManagementFilter@4c063cb9, org.springframework.security.web.access.ExceptionTranslationFilter@26ca12a2, org.springframework.security.web.access.intercept.AuthorizationFilter@3302035b]
-2025-01-30 15:48:35.759  WARN 24738 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-30 15:48:35.835  WARN 24738 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore1']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-30 15:48:35.835  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore1']
-2025-01-30 15:48:35.835  WARN 24738 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-30 15:48:35.835  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore2']
-2025-01-30 15:48:35.848  INFO 24738 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
-2025-01-30 15:48:35.852  INFO 24738 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 0.84 seconds (JVM running for 0.943)
-2025-01-30 15:48:42.255  INFO 24738 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-01-30 15:48:42.255  INFO 24738 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-01-30 15:48:42.256  INFO 24738 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-01-30 15:48:42.259 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
-2025-01-30 15:48:42.260 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:42.261 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:42.262 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 299E1FA19F94E94B382DA911403D118C
-2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
-2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
-2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
-2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
-2025-01-30 15:48:43.903 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
-2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
-2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /
-2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
-2025-01-30 15:48:45.520 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:48.714 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /
-2025-01-30 15:48:48.714 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:48.715 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
-2025-01-30 15:48:48.716 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:48.717 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
-2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
-2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:49:21.654 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
-2025-01-30 15:49:21.655 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:49:21.656 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/api/hello to session
-2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
-2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
-2025-01-30 15:49:21.659 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:49:21.659 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
-2025-01-30 15:49:21.660 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:49:21.660 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
-2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
-2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
-2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
-2025-01-30 15:49:21.662 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
-2025-01-30 15:49:38.764  INFO 24738 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-30 15:49:38.766  INFO 24738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-30 15:49:38.769  INFO 24738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T16:36:16.390+09:00  INFO 34487 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 34487 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T16:36:16.391+09:00  INFO 34487 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T16:36:16.405+09:00  INFO 34487 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T16:36:16.405+09:00  INFO 34487 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T16:36:16.571+09:00  INFO 34487 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T16:36:16.577+09:00  INFO 34487 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-30T16:36:16.754+09:00  INFO 34487 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T16:36:16.757+09:00  INFO 34487 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T16:36:16.757+09:00  INFO 34487 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T16:36:16.776+09:00  INFO 34487 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T16:36:16.777+09:00  INFO 34487 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2025-01-30T16:36:16.826+09:00  INFO 34487 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T16:36:16.838+09:00  INFO 34487 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T16:36:16.839+09:00  INFO 34487 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T16:36:16.914+09:00  INFO 34487 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T16:36:16.921+09:00  INFO 34487 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T16:36:16.948+09:00  INFO 34487 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1922261d
+2025-01-30T16:36:16.949+09:00  INFO 34487 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T16:36:16.957+09:00  WARN 34487 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T16:36:17.038+09:00  INFO 34487 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T16:36:17.039+09:00  INFO 34487 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:36:17.052+09:00  WARN 34487 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T16:36:17.127+09:00  WARN 34487 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T16:36:17.156+09:00  WARN 34487 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2290c309-aac2-4c62-aba0-ff220a9daf83
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T16:36:17.190+09:00  INFO 34487 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1910a271, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40222415, org.springframework.security.web.context.SecurityContextHolderFilter@2f742122, org.springframework.security.web.header.HeaderWriterFilter@2cca26ff, org.springframework.security.web.csrf.CsrfFilter@2459de3c, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d0b9f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bf28a45, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@327e2879, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@47508ac8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@89a2e28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@789905aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e867d42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@122d30e2, org.springframework.security.web.access.ExceptionTranslationFilter@6d6f574, org.springframework.security.web.access.intercept.AuthorizationFilter@753d3ff1]
+2025-01-30T16:36:17.204+09:00  INFO 34487 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T16:36:17.213+09:00  INFO 34487 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T16:36:17.217+09:00  INFO 34487 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.939 seconds (process running for 1.066)
+2025-01-30T16:40:18.428+09:00  INFO 34487 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:40:18.430+09:00  INFO 34487 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T16:40:18.432+09:00  INFO 34487 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T16:45:27.632+09:00  INFO 35797 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 35797 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T16:45:27.634+09:00  INFO 35797 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T16:45:27.647+09:00  INFO 35797 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T16:45:27.647+09:00  INFO 35797 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T16:45:27.809+09:00  INFO 35797 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T16:45:27.815+09:00  INFO 35797 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-30T16:45:28.001+09:00  INFO 35797 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T16:45:28.004+09:00  INFO 35797 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T16:45:28.005+09:00  INFO 35797 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T16:45:28.028+09:00  INFO 35797 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T16:45:28.028+09:00  INFO 35797 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 381 ms
+2025-01-30T16:45:28.091+09:00  INFO 35797 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T16:45:28.104+09:00  INFO 35797 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T16:45:28.104+09:00  INFO 35797 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T16:45:28.184+09:00  INFO 35797 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T16:45:28.190+09:00  INFO 35797 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T16:45:28.220+09:00  INFO 35797 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@493b3861
+2025-01-30T16:45:28.220+09:00  INFO 35797 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T16:45:28.229+09:00  WARN 35797 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T16:45:28.320+09:00  INFO 35797 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T16:45:28.322+09:00  INFO 35797 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:45:28.336+09:00  WARN 35797 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T16:45:28.413+09:00  WARN 35797 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T16:45:28.444+09:00  WARN 35797 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 534197aa-4378-4dd9-8e2f-d13d431d7111
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T16:45:28.482+09:00  INFO 35797 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5abfae71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19c0ebc8, org.springframework.security.web.context.SecurityContextHolderFilter@56a7ebc4, org.springframework.security.web.header.HeaderWriterFilter@54e4362b, org.springframework.security.web.csrf.CsrfFilter@60e03583, org.springframework.security.web.authentication.logout.LogoutFilter@2859b3ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26dcd14b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19419cdf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@29fdc03b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@232c121c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6644aab1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54206440, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2680d222, org.springframework.security.web.access.ExceptionTranslationFilter@48c9261c, org.springframework.security.web.access.intercept.AuthorizationFilter@59f1449a]
+2025-01-30T16:45:28.500+09:00  INFO 35797 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T16:45:28.512+09:00  INFO 35797 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T16:45:28.517+09:00  INFO 35797 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.0 seconds (process running for 1.139)
+2025-01-30T16:48:20.112+09:00  INFO 35797 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:48:20.113+09:00  INFO 35797 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T16:48:20.115+09:00  INFO 35797 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T16:50:14.131+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 36681 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T16:50:14.133+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T16:50:14.147+09:00  INFO 36681 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T16:50:14.148+09:00  INFO 36681 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T16:50:14.331+09:00  INFO 36681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T16:50:14.338+09:00  INFO 36681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-01-30T16:50:14.530+09:00  INFO 36681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T16:50:14.534+09:00  INFO 36681 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T16:50:14.534+09:00  INFO 36681 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T16:50:14.556+09:00  INFO 36681 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T16:50:14.556+09:00  INFO 36681 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 408 ms
+2025-01-30T16:50:14.610+09:00  INFO 36681 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T16:50:14.622+09:00  INFO 36681 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T16:50:14.623+09:00  INFO 36681 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T16:50:14.703+09:00  INFO 36681 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T16:50:14.710+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T16:50:14.743+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@67b8f854
+2025-01-30T16:50:14.743+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T16:50:14.752+09:00  WARN 36681 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T16:50:15.003+09:00  INFO 36681 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T16:50:15.007+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T16:50:15.010+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T16:50:15.010+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T16:50:15.045+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T16:50:15.068+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T16:50:15.090+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T16:50:15.120+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T16:50:15.142+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T16:50:15.166+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T16:50:15.213+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T16:50:15.267+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T16:50:15.321+09:00  INFO 36681 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:50:15.359+09:00  WARN 36681 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T16:50:15.471+09:00  WARN 36681 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T16:50:15.502+09:00  WARN 36681 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f9219ff0-cd02-4592-ac85-5f67142518f7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T16:50:15.540+09:00  INFO 36681 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a6ed508, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@443c8028, org.springframework.security.web.context.SecurityContextHolderFilter@1bffa31b, org.springframework.security.web.header.HeaderWriterFilter@22098832, org.springframework.security.web.csrf.CsrfFilter@5b4441ab, org.springframework.security.web.authentication.logout.LogoutFilter@30de106e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22d1469f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1161b3c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@20cdbe4e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@551b78fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c36cffb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31829f21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ff6dfe2, org.springframework.security.web.access.ExceptionTranslationFilter@1d1cdf02, org.springframework.security.web.access.intercept.AuthorizationFilter@46112dd9]
+2025-01-30T16:50:15.553+09:00  INFO 36681 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T16:50:15.563+09:00  INFO 36681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T16:50:15.567+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.557 seconds (process running for 1.71)
+2025-01-30T16:52:46.039+09:00  INFO 36681 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2025-01-30T16:52:46.053+09:00  INFO 36681 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T16:52:46.060+09:00  INFO 36681 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:52:46.062+09:00  INFO 36681 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T16:52:46.063+09:00  INFO 36681 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T16:52:46.099+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 36681 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T16:52:46.099+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T16:52:46.143+09:00  INFO 36681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T16:52:46.144+09:00  INFO 36681 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-01-30T16:52:46.177+09:00  INFO 36681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T16:52:46.177+09:00  INFO 36681 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T16:52:46.177+09:00  INFO 36681 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T16:52:46.181+09:00  INFO 36681 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T16:52:46.181+09:00  INFO 36681 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 81 ms
+2025-01-30T16:52:46.196+09:00  INFO 36681 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T16:52:46.198+09:00  INFO 36681 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T16:52:46.198+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-01-30T16:52:46.200+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@790e128c
+2025-01-30T16:52:46.200+09:00  INFO 36681 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-01-30T16:52:46.201+09:00  WARN 36681 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T16:52:46.220+09:00  INFO 36681 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T16:52:46.220+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T16:52:46.263+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T16:52:46.304+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T16:52:46.328+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T16:52:46.350+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T16:52:46.369+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:46.386+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:46.410+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:46.428+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T16:52:46.465+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T16:52:46.502+09:00 DEBUG 36681 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T16:52:46.550+09:00  INFO 36681 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:52:46.581+09:00  WARN 36681 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T16:52:46.628+09:00  WARN 36681 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T16:52:46.645+09:00  WARN 36681 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: afe14e9c-8128-4136-af9b-d33ee51cc370
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T16:52:46.651+09:00  INFO 36681 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e9d065d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5645dc9, org.springframework.security.web.context.SecurityContextHolderFilter@47d1929c, org.springframework.security.web.header.HeaderWriterFilter@25a672dc, org.springframework.security.web.csrf.CsrfFilter@294808f9, org.springframework.security.web.authentication.logout.LogoutFilter@12b9ef29, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35393b79, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4dbe7144, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@797a4cef, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68a45a50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2eb7555f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b98c879, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3346ff4a, org.springframework.security.web.access.ExceptionTranslationFilter@b4fd2b2, org.springframework.security.web.access.intercept.AuthorizationFilter@317552fd]
+2025-01-30T16:52:46.655+09:00  INFO 36681 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T16:52:46.659+09:00  INFO 36681 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T16:52:46.661+09:00  INFO 36681 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.57 seconds (process running for 152.804)
+2025-01-30T16:52:46.661+09:00  INFO 36681 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-01-30T16:52:50.594+09:00  INFO 37538 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 37538 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T16:52:50.595+09:00  INFO 37538 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T16:52:50.608+09:00  INFO 37538 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T16:52:50.608+09:00  INFO 37538 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T16:52:50.768+09:00  INFO 37538 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T16:52:50.774+09:00  INFO 37538 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2025-01-30T16:52:50.949+09:00  INFO 37538 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T16:52:50.952+09:00  INFO 37538 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T16:52:50.952+09:00  INFO 37538 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T16:52:50.971+09:00  INFO 37538 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T16:52:50.971+09:00  INFO 37538 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2025-01-30T16:52:51.016+09:00  INFO 37538 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T16:52:51.028+09:00  INFO 37538 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T16:52:51.029+09:00  INFO 37538 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T16:52:51.101+09:00  INFO 37538 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T16:52:51.112+09:00  INFO 37538 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T16:52:51.153+09:00  INFO 37538 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@44301983
+2025-01-30T16:52:51.154+09:00  INFO 37538 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T16:52:51.162+09:00  WARN 37538 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T16:52:51.389+09:00  INFO 37538 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T16:52:51.393+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T16:52:51.441+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T16:52:51.481+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T16:52:51.499+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T16:52:51.520+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T16:52:51.544+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:51.567+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:51.588+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T16:52:51.611+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T16:52:51.655+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T16:52:51.702+09:00 DEBUG 37538 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T16:52:51.757+09:00  INFO 37538 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:52:51.792+09:00  WARN 37538 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T16:52:51.879+09:00  WARN 37538 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T16:52:51.908+09:00  WARN 37538 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1047320b-a65f-477d-898e-fdb7bffe0e99
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T16:52:51.940+09:00  INFO 37538 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ef1b49b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26955c51, org.springframework.security.web.context.SecurityContextHolderFilter@2f25f22a, org.springframework.security.web.header.HeaderWriterFilter@70038b48, org.springframework.security.web.csrf.CsrfFilter@2c47b0da, org.springframework.security.web.authentication.logout.LogoutFilter@58771cc7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28ec7253, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4abbdabe, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5cfb0ea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7926314d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51aae5bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@696685b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ac8d608, org.springframework.security.web.access.ExceptionTranslationFilter@34a39264, org.springframework.security.web.access.intercept.AuthorizationFilter@3bf31d0e]
+2025-01-30T16:52:51.951+09:00  WARN 37538 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-01-30T16:52:51.957+09:00  WARN 37538 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-01-30T16:52:51.958+09:00  INFO 37538 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:52:51.959+09:00  INFO 37538 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T16:52:51.960+09:00  INFO 37538 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T16:52:51.961+09:00  INFO 37538 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-01-30T16:52:51.965+09:00  INFO 37538 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-30T16:52:51.970+09:00 ERROR 37538 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2025-01-30T16:59:51.038+09:00  INFO 36681 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T16:59:51.039+09:00  INFO 36681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-01-30T16:59:51.049+09:00  INFO 36681 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-01-30T17:05:54.431+09:00  INFO 39608 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 39608 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T17:05:54.432+09:00  INFO 39608 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T17:05:54.445+09:00  INFO 39608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T17:05:54.445+09:00  INFO 39608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T17:05:54.612+09:00  INFO 39608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T17:05:54.629+09:00  INFO 39608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-01-30T17:05:54.801+09:00  INFO 39608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T17:05:54.805+09:00  INFO 39608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T17:05:54.805+09:00  INFO 39608 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T17:05:54.825+09:00  INFO 39608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T17:05:54.825+09:00  INFO 39608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 380 ms
+2025-01-30T17:05:54.877+09:00  INFO 39608 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T17:05:54.889+09:00  INFO 39608 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T17:05:54.889+09:00  INFO 39608 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T17:05:54.965+09:00  INFO 39608 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T17:05:54.972+09:00  INFO 39608 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T17:05:55.002+09:00  INFO 39608 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@72621e94
+2025-01-30T17:05:55.002+09:00  INFO 39608 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T17:05:55.011+09:00  WARN 39608 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T17:05:55.237+09:00  INFO 39608 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T17:05:55.241+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T17:05:55.292+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T17:05:55.335+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T17:05:55.359+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T17:05:55.384+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T17:05:55.415+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T17:05:55.438+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T17:05:55.463+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T17:05:55.485+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T17:05:55.529+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T17:05:55.577+09:00 DEBUG 39608 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T17:05:55.636+09:00  INFO 39608 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T17:05:55.779+09:00  WARN 39608 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T17:05:55.854+09:00  WARN 39608 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T17:05:55.875+09:00  WARN 39608 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cef9c5d9-334b-413d-8f0c-2b8a4ed50c4f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T17:05:55.906+09:00  INFO 39608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5febadb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bc6850c, org.springframework.security.web.context.SecurityContextHolderFilter@18a6e486, org.springframework.security.web.header.HeaderWriterFilter@136fcbe7, org.springframework.security.web.csrf.CsrfFilter@5ed70386, org.springframework.security.web.authentication.logout.LogoutFilter@1a21756a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21ae1264, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@15175409, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@329c3c21, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a7dd283, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dec3cc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23c7869, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36e0535f, org.springframework.security.web.access.ExceptionTranslationFilter@692c9fbf, org.springframework.security.web.access.intercept.AuthorizationFilter@759eeacd]
+2025-01-30T17:05:55.917+09:00  INFO 39608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T17:05:55.928+09:00  INFO 39608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T17:05:55.933+09:00  INFO 39608 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.61 seconds (process running for 1.734)
+2025-01-30T17:10:00.439+09:00  INFO 39608 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T17:10:00.443+09:00  INFO 39608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T17:10:00.446+09:00  INFO 39608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T17:10:06.346+09:00  INFO 40243 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 40243 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T17:10:06.348+09:00  INFO 40243 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T17:10:06.361+09:00  INFO 40243 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T17:10:06.361+09:00  INFO 40243 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T17:10:06.541+09:00  INFO 40243 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T17:10:06.558+09:00  INFO 40243 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-01-30T17:10:06.752+09:00  INFO 40243 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T17:10:06.756+09:00  INFO 40243 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T17:10:06.756+09:00  INFO 40243 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T17:10:06.777+09:00  INFO 40243 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T17:10:06.777+09:00  INFO 40243 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2025-01-30T17:10:06.824+09:00  INFO 40243 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T17:10:06.836+09:00  INFO 40243 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T17:10:06.837+09:00  INFO 40243 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T17:10:06.915+09:00  INFO 40243 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T17:10:06.922+09:00  INFO 40243 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T17:10:06.950+09:00  INFO 40243 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@70aef57a
+2025-01-30T17:10:06.950+09:00  INFO 40243 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T17:10:06.958+09:00  WARN 40243 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T17:10:07.217+09:00  INFO 40243 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T17:10:07.223+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T17:10:07.269+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T17:10:07.308+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T17:10:07.331+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T17:10:07.359+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T17:10:07.385+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T17:10:07.405+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T17:10:07.428+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T17:10:07.452+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T17:10:07.494+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T17:10:07.540+09:00 DEBUG 40243 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T17:10:07.596+09:00  INFO 40243 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T17:10:07.762+09:00  WARN 40243 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T17:10:07.862+09:00  WARN 40243 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T17:10:07.888+09:00  WARN 40243 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef20bbc4-9fd1-46ef-8f07-76f30815e680
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T17:10:07.927+09:00  INFO 40243 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4fc4236f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb20519, org.springframework.security.web.context.SecurityContextHolderFilter@68010585, org.springframework.security.web.header.HeaderWriterFilter@40652b42, org.springframework.security.web.csrf.CsrfFilter@2be407ff, org.springframework.security.web.authentication.logout.LogoutFilter@36d0a9d0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c16e466, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77cb5657, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2965cae3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@48a0513, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55336d28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ea963dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b008932, org.springframework.security.web.access.ExceptionTranslationFilter@1fae026b, org.springframework.security.web.access.intercept.AuthorizationFilter@428d40d5]
+2025-01-30T17:10:07.941+09:00  INFO 40243 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T17:10:07.954+09:00  INFO 40243 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T17:10:07.959+09:00  INFO 40243 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.723 seconds (process running for 1.852)
+2025-01-30T17:31:11.439+09:00  INFO 40243 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T17:31:11.442+09:00  INFO 40243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30T17:31:11.444+09:00  INFO 40243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30T17:31:19.659+09:00  INFO 43236 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 with PID 43236 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30T17:31:19.660+09:00  INFO 43236 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30T17:31:19.674+09:00  INFO 43236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30T17:31:19.674+09:00  INFO 43236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30T17:31:19.837+09:00  INFO 43236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30T17:31:19.853+09:00  INFO 43236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-01-30T17:31:20.029+09:00  INFO 43236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30T17:31:20.032+09:00  INFO 43236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30T17:31:20.032+09:00  INFO 43236 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-01-30T17:31:20.050+09:00  INFO 43236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30T17:31:20.050+09:00  INFO 43236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
+2025-01-30T17:31:20.098+09:00  INFO 43236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30T17:31:20.110+09:00  INFO 43236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.22.Final
+2025-01-30T17:31:20.111+09:00  INFO 43236 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-30T17:31:20.188+09:00  INFO 43236 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-30T17:31:20.195+09:00  INFO 43236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30T17:31:20.223+09:00  INFO 43236 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@488eb2e2
+2025-01-30T17:31:20.223+09:00  INFO 43236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30T17:31:20.231+09:00  WARN 43236 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-30T17:31:20.456+09:00  INFO 43236 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-30T17:31:20.460+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FK48ns9kl4951e89h3ef6xgsu2g
+2025-01-30T17:31:20.511+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules drop foreign key if exists FKd4y4xekwahv9boo6lc8gfl3jv
+2025-01-30T17:31:20.553+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : drop table if exists schedules
+2025-01-30T17:31:20.578+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : drop table if exists shifts
+2025-01-30T17:31:20.601+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users
+2025-01-30T17:31:20.633+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : create table schedules (work_date date not null, id bigint not null auto_increment, shift_id bigint not null, user_id bigint not null, primary key (id)) engine=InnoDB
+2025-01-30T17:31:20.648+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : create table shifts (end_time time(6) not null, start_time time(6) not null, id bigint not null auto_increment, name varchar(255) not null, primary key (id)) engine=InnoDB
+2025-01-30T17:31:20.667+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : create table users (id bigint not null auto_increment, name varchar(50) not null, email varchar(100) not null, role enum ('ADMIN','STAFF') not null, primary key (id)) engine=InnoDB
+2025-01-30T17:31:20.693+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-01-30T17:31:20.741+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FK48ns9kl4951e89h3ef6xgsu2g foreign key (shift_id) references shifts (id)
+2025-01-30T17:31:20.779+09:00 DEBUG 43236 --- [restartedMain] org.hibernate.SQL                        : alter table if exists schedules add constraint FKd4y4xekwahv9boo6lc8gfl3jv foreign key (user_id) references users (id)
+2025-01-30T17:31:20.829+09:00  INFO 43236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30T17:31:20.969+09:00  WARN 43236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30T17:31:21.038+09:00  WARN 43236 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-01-30T17:31:21.058+09:00  WARN 43236 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1fe40654-385d-47a9-a827-501c5b672208
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-01-30T17:31:21.092+09:00  INFO 43236 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@afcf2c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ef95d69, org.springframework.security.web.context.SecurityContextHolderFilter@9880b8a, org.springframework.security.web.header.HeaderWriterFilter@5d6cb8e8, org.springframework.security.web.csrf.CsrfFilter@387fca17, org.springframework.security.web.authentication.logout.LogoutFilter@529dc608, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7df0d72f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4e45078e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@524963dd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1929af0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1477f26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@429aa987, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e24b64, org.springframework.security.web.access.ExceptionTranslationFilter@6a363370, org.springframework.security.web.access.intercept.AuthorizationFilter@180bb02d]
+2025-01-30T17:31:21.102+09:00  INFO 43236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-01-30T17:31:21.112+09:00  INFO 43236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30T17:31:21.116+09:00  INFO 43236 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.571 seconds (process running for 1.702)
