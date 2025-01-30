@@ -33,3 +33,165 @@
 2025-01-30 12:56:06.474  INFO 51643 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-30 12:56:06.476  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-01-30 12:56:06.480  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30 15:46:17.222  INFO 24311 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 on MacBook-Pro.local with PID 24311 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30 15:46:17.223  INFO 24311 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30 15:46:17.396  INFO 24311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30 15:46:17.401  INFO 24311 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-01-30 15:46:17.567  INFO 24311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2025-01-30 15:46:17.571  INFO 24311 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30 15:46:17.571  INFO 24311 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2025-01-30 15:46:17.599  INFO 24311 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30 15:46:17.599  INFO 24311 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2025-01-30 15:46:17.652  INFO 24311 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30 15:46:17.665  INFO 24311 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2025-01-30 15:46:17.720  INFO 24311 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-30 15:46:17.745  INFO 24311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30 15:46:17.767  INFO 24311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30 15:46:17.772  INFO 24311 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-01-30 15:46:17.849  INFO 24311 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-30 15:46:17.852  INFO 24311 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 15:46:17.896  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@743bb39a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2de3b052, org.springframework.security.web.context.SecurityContextPersistenceFilter@18907af2, org.springframework.security.web.header.HeaderWriterFilter@60dcf9ec, org.springframework.security.web.csrf.CsrfFilter@36211bbc, org.springframework.security.web.authentication.logout.LogoutFilter@59ec7020, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61a704d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfd5cd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1de7f898, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f3c8b60, org.springframework.security.web.session.SessionManagementFilter@4c063cb9, org.springframework.security.web.access.ExceptionTranslationFilter@26ca12a2, org.springframework.security.web.access.intercept.AuthorizationFilter@3302035b]
+2025-01-30 15:46:17.905  WARN 24311 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30 15:46:17.987  WARN 24311 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore1']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-30 15:46:17.987  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore1']
+2025-01-30 15:46:17.987  WARN 24311 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-30 15:46:17.987  INFO 24311 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore2']
+2025-01-30 15:46:18.001  INFO 24311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2025-01-30 15:46:18.005  INFO 24311 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 0.918 seconds (JVM running for 1.035)
+2025-01-30 15:47:24.554  INFO 24311 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-30 15:47:24.555  INFO 24311 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-30 15:47:24.555  INFO 24311 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-01-30 15:47:24.559 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
+2025-01-30 15:47:24.561 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:47:24.562 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8081/api/hello to session
+2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@49be0ce7
+2025-01-30 15:47:24.575 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:47:24.576 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:47:24.576 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:47:24.577 DEBUG 24311 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:47:24.580 DEBUG 24311 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:28.705  INFO 24311 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 15:48:28.708  INFO 24311 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30 15:48:28.712  INFO 24311 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-30 15:48:35.127  INFO 24738 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.14 on MacBook-Pro.local with PID 24738 (/Users/psy/Projects/work-scheduler/work-schedule/backend/build/classes/java/main started by psy in /Users/psy/Projects/work-scheduler/work-schedule/backend)
+2025-01-30 15:48:35.127  INFO 24738 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-01-30 15:48:35.293  INFO 24738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30 15:48:35.297  INFO 24738 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-01-30 15:48:35.454  INFO 24738 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-01-30 15:48:35.459  INFO 24738 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-30 15:48:35.459  INFO 24738 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2025-01-30 15:48:35.488  INFO 24738 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-30 15:48:35.488  INFO 24738 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 347 ms
+2025-01-30 15:48:35.542  INFO 24738 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30 15:48:35.554  INFO 24738 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2025-01-30 15:48:35.597  INFO 24738 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-30 15:48:35.622  INFO 24738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-30 15:48:35.643  INFO 24738 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-30 15:48:35.648  INFO 24738 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-01-30 15:48:35.710  INFO 24738 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-30 15:48:35.712  INFO 24738 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 15:48:35.751  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@743bb39a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2de3b052, org.springframework.security.web.context.SecurityContextPersistenceFilter@18907af2, org.springframework.security.web.header.HeaderWriterFilter@60dcf9ec, org.springframework.security.web.csrf.CsrfFilter@36211bbc, org.springframework.security.web.authentication.logout.LogoutFilter@59ec7020, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61a704d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cfd5cd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1de7f898, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f3c8b60, org.springframework.security.web.session.SessionManagementFilter@4c063cb9, org.springframework.security.web.access.ExceptionTranslationFilter@26ca12a2, org.springframework.security.web.access.intercept.AuthorizationFilter@3302035b]
+2025-01-30 15:48:35.759  WARN 24738 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30 15:48:35.835  WARN 24738 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore1']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-30 15:48:35.835  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore1']
+2025-01-30 15:48:35.835  WARN 24738 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/ignore2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-30 15:48:35.835  INFO 24738 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/ignore2']
+2025-01-30 15:48:35.848  INFO 24738 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-01-30 15:48:35.852  INFO 24738 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 0.84 seconds (JVM running for 0.943)
+2025-01-30 15:48:42.255  INFO 24738 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-30 15:48:42.255  INFO 24738 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-30 15:48:42.256  INFO 24738 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-01-30 15:48:42.259 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-01-30 15:48:42.260 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:42.261 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:42.262 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 299E1FA19F94E94B382DA911403D118C
+2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
+2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:48:42.271 DEBUG 24738 --- [http-nio-8090-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
+2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:42.272 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:42.274 DEBUG 24738 --- [http-nio-8090-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:42.277 DEBUG 24738 --- [http-nio-8090-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:43.902 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
+2025-01-30 15:48:43.903 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
+2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:48:43.905 DEBUG 24738 --- [http-nio-8090-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
+2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:48:43.906 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:43.907 DEBUG 24738 --- [http-nio-8090-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:45.519 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
+2025-01-30 15:48:45.520 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:45.521 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:45.522 DEBUG 24738 --- [http-nio-8090-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:48.714 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-01-30 15:48:48.714 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:48.715 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8090/
+2025-01-30 15:48:48.716 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:48.717 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/ to session
+2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
+2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:48:48.718 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:48:48.719 DEBUG 24738 --- [http-nio-8090-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:49:21.654 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
+2025-01-30 15:49:21.655 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:49:21.656 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8090/api/hello to session
+2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-01-30 15:49:21.658 DEBUG 24738 --- [http-nio-8090-exec-5] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@68e20b80
+2025-01-30 15:49:21.659 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:49:21.659 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 15:49:21.660 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:49:21.660 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /error
+2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /error
+2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:49:21.661 DEBUG 24738 --- [http-nio-8090-exec-5] w.c.HttpSessionSecurityContextRepository : Did not store anonymous SecurityContext
+2025-01-30 15:49:21.662 DEBUG 24738 --- [http-nio-8090-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 15:49:38.764  INFO 24738 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 15:49:38.766  INFO 24738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30 15:49:38.769  INFO 24738 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
