@@ -1,0 +1,35 @@
+2025-01-30 12:53:22.225 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/hello
+2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8081/api/hello
+2025-01-30 12:53:22.226 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 12:53:22.227 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /api/hello] with attributes [authenticated]
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8081/api/hello to session
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4926364a, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@3a2bb026
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8081/login
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.228 DEBUG 51643 --- [http-nio-8081-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 12:53:22.230 DEBUG 51643 --- [http-nio-8081-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2025-01-30 12:53:22.230 DEBUG 51643 --- [http-nio-8081-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.231 DEBUG 51643 --- [http-nio-8081-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 12:53:22.688 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-01-30 12:53:22.689 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [GET /favicon.ico] with attributes [authenticated]
+2025-01-30 12:53:22.689 DEBUG 51643 --- [http-nio-8081-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4926364a, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@3a2bb026
+2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8081/login
+2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.690 DEBUG 51643 --- [http-nio-8081-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
+2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2025-01-30 12:53:22.693 DEBUG 51643 --- [http-nio-8081-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.694 DEBUG 51643 --- [http-nio-8081-exec-4] w.c.HttpSessionSecurityContextRepository : Did not store empty SecurityContext
+2025-01-30 12:53:22.694 DEBUG 51643 --- [http-nio-8081-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2025-01-30 12:56:06.474  INFO 51643 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 12:56:06.476  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-30 12:56:06.480  INFO 51643 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
